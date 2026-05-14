@@ -1,0 +1,32 @@
+/* PADDING: espacio interno entre el contenido y el borde del elemento
+   Shorthand (forma corta):
+   padding: 20px 40px 0 3px;  → top right bottom left (en sentido horario)
+   padding: 30px 50px;         → top/bottom  right/left
+   padding: 30px;              → los cuatro lados iguales */
+
+.formulario {
+    background: red;
+    padding: 30px;
+}
+
+/* MARGIN: espacio externo, entre el elemento y los elementos vecinos
+   Funciona con el mismo shorthand que padding.
+   margin: auto → centra horizontalmente un elemento que tiene width definido */
+
+.formulario_input {
+    padding: 6px 10px;
+    width:90%;
+    background: black;
+    color:red;
+    margin: 4px;
+}
+
+.formulario_submit {
+    /* letter-spacing: espacio entre letras */
+    letter-spacing: 2px;
+    /* text-transform: transforma el texto — uppercase = todo mayúsculas */
+    text-transform: uppercase;
+    background: red;
+    color: white;
+    width: 50%;
+}

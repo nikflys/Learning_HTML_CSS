@@ -1,0 +1,16 @@
+div {
+    background: red;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+/*arranco con los bordes*/
+    /*border-width: 3px;
+    border-style: solid;
+    border-color: black; PUEDO USAR SOLO BORDER*/
+    /* si quiero solo un borde, border-top... etc, tambien puedo hacerlo en una linea en vez de esas 3*/
+    border: 4px,solid,black;
+    border-radius: 4px; /*redondea las esquinas*/
+    /*border-image: url(../../curso_html/imagenes/Boca.png) 30; le pongo una imagen al borde, el 30 es el ancho del borde, si no lo pongo toma el valor por defecto de 1px*/
+    
+
+}

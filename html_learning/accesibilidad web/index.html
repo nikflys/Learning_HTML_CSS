@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accesibilidad web</title>
+</head>
+    <body>
+        <!-- Accesibilidad web: hacer que la página sea usable para personas con discapacidades.
+             Los lectores de pantalla (screen readers) leen el HTML en voz alta, entonces
+             importa mucho cómo está estructurado y etiquetado el contenido. -->
+
+        <!-- el alt describe la imagen para quien no puede verla -->
+        <img src="../imagenes/Boca.png" alt="Escudo de Boca">
+
+        <a href="index.html">Home</a>
+
+        <!-- nav le avisa al lector de pantalla que esto es una zona de navegación -->
+        <nav>
+            <ul>
+                <li>asdasda</li>
+                <li>asdda</li>
+                <li>asdassda</li>
+                <li>aasda</li>
+            </ul>
+        </nav>
+
+        <h2>TITULO</h2>
+
+        <!-- role: le dice al navegador qué tipo de elemento es (slider, button, dialog, etc.)
+             útil cuando usás un div para algo que no es un div de verdad -->
+        <!-- aria-valuenow: valor actual del slider -->
+        <!-- aria-valuemin / aria-valuemax: rango posible de valores -->
+        <!-- Los atributos aria-* son parte de la especificación ARIA, que amplía la semántica
+             para elementos interactivos personalizados -->
+        <div id="slider" role="slider" aria-valuenow="3" aria-valuemin="1" aria-valuemax="7">
+            <img src="../imagenes/Boca.png" alt="Imagen de ejemplo para el slider">
+        </div>
+    </body>
+</html>

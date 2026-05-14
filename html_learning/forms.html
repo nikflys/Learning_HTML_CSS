@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!-- form: contenedor del formulario, agrupa todos los inputs -->
+        <form>
+            <!-- type="text": campo de texto libre -->
+            <!-- name: identifica el campo cuando se manda el formulario al servidor -->
+            <!-- placeholder: texto de ejemplo que desaparece al escribir -->
+            <!-- required: el campo es obligatorio, el navegador no deja enviar si está vacío -->
+            <input type="text" name="username" placeholder="Escribe tu usuario" required>
+
+            <!-- type="email": valida automáticamente que sea formato email (tiene @ y punto) -->
+            <input type="email" name="email" placeholder="Escribe tu mail" required>
+
+            <!-- type="password": oculta lo que se escribe con asteriscos o puntos -->
+            <input type="password" placeholder="Escribe tu contraseña" required>
+
+            <!-- type="checkbox": casilla de marcado, para opciones múltiples -->
+            <input type="checkbox">
+
+            <!-- type="radio": para elegir UNA sola opción de un grupo (se agrupan por el mismo name) -->
+            <input type="radio">
+
+            <!-- type="submit": botón que envía el formulario -->
+            <input type="submit">
+
+            <!-- type="file": abre el explorador de archivos para subir un archivo -->
+            <input type="file">
+
+            <!-- type="date": muestra un selector de fecha del navegador -->
+            <input type="date">
+
+            <!-- type="color": abre un selector de color -->
+            <input type="color">
+        </form>
+    </body>
+
+</html>

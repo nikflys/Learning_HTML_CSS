@@ -1,0 +1,72 @@
+/* Ejercicio de cards (tarjetas) combinando todo lo aprendido:
+   bordes, box-shadow, padding, margin, border-radius, text, colores */
+
+body {
+    background-color: rgb(67, 223, 213);
+    font-family: sans-serif;
+    color: white;
+}
+
+/* Las tres cards comparten estructura similar, solo cambia el color de fondo.
+   En un proyecto real convendría tener una clase base .card y agregar solo
+   las diferencias en .card_orange, .card_green, etc. */
+
+.card_orange {
+    background: coral;
+    text-align: center;
+    width: 400px;
+    margin: auto;        /* centra horizontalmente */
+    margin-top: 20px;
+    box-shadow: 0 0 20px 0 #000d; /* sin desplazamiento, difusa, semitransparente */
+    border-radius: 10px;
+}
+
+.card_green{
+    background: rgb(80, 255, 118);
+    text-align: center;
+    color: #000; /* el texto en verde claro necesita color oscuro para ser legible */
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 20px 0 #000d;
+    border-radius: 10px;
+}
+
+.card_pink{
+    background: rgb(205, 51, 232);
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0 0 20px 0 #000d;
+    border-radius: 10px;
+}
+
+img {
+    width: 150px;
+    height: 170px;
+    /* border-radius: 50% convierte cualquier elemento rectangular en círculo */
+    border-radius:50%;
+    margin-top: 10px;
+}
+
+.card_title {
+    padding-top: 10px;
+    font-size: 22px;
+    margin:0; /* saca el margen por defecto del h1 */
+}
+
+.card_subtitle {
+    font-size: 13px;
+    font-weight: 100;         /* muy fino, casi transparente */
+    letter-spacing: 2px;      /* espaciado generoso da un look más elegante en subtítulos */
+}
+
+.card_content {
+    font-size: 12px;
+    padding:20px;
+    text-align: justify; /* el texto ocupa todo el ancho, alineado de ambos lados */
+}
+
+
+

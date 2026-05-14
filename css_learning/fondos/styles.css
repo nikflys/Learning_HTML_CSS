@@ -1,0 +1,35 @@
+body {
+    background-color: #0091ff;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff
+}
+
+.box {
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    background-color: rgb(31, 248, 255); /* color de fallback si la imagen no carga */
+    background-image: url(https://essential.vtexassets.com/arquivos/ids/1645661-800-auto?v=638852438372370000&width=800&height=auto&aspect=true);
+    /* cover: escala la imagen para cubrir todo el contenedor, puede recortar los bordes */
+    background-size: cover;
+    /* top: ancla la imagen desde arriba, útil para que no se corte la parte importante */
+    background-position: top;
+    /* fixed: la imagen queda fija al hacer scroll, el contenido se mueve "sobre" ella (parallax) */
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; → por defecto la imagen se repite en mosaico, esto lo evita */
+}
+
+/* Truco para oscurecer/aclarar una imagen de fondo sin tocar la imagen:
+   se pone un div encima con background-color semitransparente.
+   #000a = negro con ~67% de opacidad (la 'a' es el canal alpha en hex) */
+.opaco {
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+}
+
+h2 {
+    padding: 60px;
+    text-align: center;
+}

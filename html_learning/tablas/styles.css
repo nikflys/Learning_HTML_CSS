@@ -1,0 +1,32 @@
+body {
+    background-color: #333;
+    color:#ddd;
+    font-size: 18px;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 6px;
+    font-family: sans-serif;
+    border: none;
+    border-bottom: 1px solid #777;
+
+}
+
+table {
+    width: 100%;
+    border-spacing: 12px;
+    max-width: 700px;
+    border: 2px solid #555;
+    margin: auto;
+    box-shadow: 0 0 15px #0009;
+
+}
+
+footer {
+    font-size: 1.2em;
+}
+
+
+

@@ -1,0 +1,21 @@
+/* width y height: definen el ancho y alto del elemento.
+   Por defecto los elementos de bloque (div, p, etc.) ocupan el 100% del ancho disponible.
+   Los elementos inline (span, a, etc.) se ajustan al contenido. */
+
+div {
+    background: red;
+    width: 400px;
+    height: 300px;
+}
+
+input {
+    /* % es relativo al elemento padre — acá el input ocupa el 90% del form */
+    width: 90%;
+    /* también existen: min-width, max-width, min-height, max-height
+       muy útiles para que los elementos sean flexibles pero con límites */
+}
+
+form {
+    width:400px;
+}
+

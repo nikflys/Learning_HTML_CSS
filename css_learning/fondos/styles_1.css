@@ -1,0 +1,30 @@
+body {
+    background-color: #ff0000;
+    margin:0;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    margin:auto;
+    margin-top:20px;
+    /* linear-gradient: degradé lineal entre dos o más colores.
+       Primer argumento: dirección (to bottom, to right, 45deg, etc.) — si se omite va de arriba a abajo.
+       Acá va de transparent a un color oscuro semitransparente (#29101090),
+       creando el efecto de "imagen que se desvanece" hacia abajo. */
+    background: linear-gradient(transparent, #29101090);
+    border-radius: 7px;
+    border-top: 6px solid #880000;
+}
+
+img {
+    width: 300px;
+}
+
+h1 {
+    margin:0;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}

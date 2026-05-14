@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Fachero</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagenes/Boca.png" type="image/png">
+</head>
+<body>
+    <form>
+        <h2>Formulario de Contacto</h2>
+        <fieldset>
+            <legend>INFORMACIÓN BASICA</legend>
+            <div class="form-input">
+                <label>Nombre Completo
+                <input type="text" placeholder="Ej: John Doe">
+                </label>
+            </div>
+            <!--SIMPLE INPUTS-->
+            <div class="form-input">
+                <label>Email
+                <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Asunto
+                <input type="text" placeholder="Asunto del mensaje">
+                </label>
+            </div>
+        </fieldset>
+        <!--SELECT & OPTION-->
+        <div class="form-input">
+            <label>Tipo de Usuario
+                <select name="type-of-user">
+                    <option value="user 1">Seguidor/a</option>
+                    <option value="user 2">Empresa</option>
+                    <option value="user 3">Otros</option>
+                </select>
+            </label>
+        </div>
+        <!-- DATALIST & OPTION-->
+        <div class="form-input">
+            <label>Referente
+                <input list="referente">
+                    <datalist id="referente" name="type-of-user">
+                    <option value="Soy Dalto">Un creador de contenido</option>
+                    <option value="Una Empresa">Una empresa del rubro IT</option>
+                    <option value="Un amigo">Me recomendó un amigo</option>
+                </datalist>
+            </label>
+        </div>
+        <!--TEXTAREA-->
+        <div class="form-input">
+            <label>Mensaje
+            <textarea id="mensaje" rows="9" placeholder="Dejá tu mensaje..."></textarea>
+            </label>
+        </div>
+        <div class="form-input">
+            <label>Acepto los <a href="terms.html" target="_blank">terminos y condiciones</a>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            </label>
+        </div>
+        <div class="form-input">
+            <input class="boton-enviar" type="submit" value="Enviar Formulario">
+        </div>
+    </form>
+</body>
+</html>

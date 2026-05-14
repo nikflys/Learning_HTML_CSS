@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Area</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form>
+        <h2>Formulario de Contacto</h2>
+        <fieldset>
+            <legend>INFORMACIÓN BASICA</legend>
+            <div class="form-input">
+                <label>Nombre Completo
+                <input type="text" placeholder="Ej: John Doe">
+                </label>
+            </div>
+            <!--SIMPLE INPUTS-->
+            <div class="form-input">
+                <label>Email
+                <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Asunto
+                <input type="text" placeholder="Asunto del mensaje">
+                </label>
+            </div>
+        </fieldset>
+        <!-- SELECT & OPTION: menú desplegable con opciones fijas -->
+        <!-- value: lo que se manda al servidor, el texto entre tags es lo que ve el usuario -->
+        <div class="form-input">
+            <label>Tipo de Usuario
+                <select name="type-of-user">
+                    <option value="user 1">Seguidor/a</option>
+                    <option value="user 2">Empresa</option>
+                    <option value="user 3">Otros</option>
+                </select>
+            </label>
+        </div>
+
+        <!-- DATALIST & OPTION: similar al select pero permite escribir texto libre también.
+             El input tiene list="id-del-datalist" para enlazarlos.
+             Las opciones aparecen como sugerencias, no son obligatorias. -->
+        <div class="form-input">
+            <label>Referente
+                <input list="referente">
+                    <datalist id="referente" name="type-of-user">
+                    <option value="Soy Dalto">Un creador de contenido</option>
+                    <option value="Una Empresa">Una empresa del rubro IT</option>
+                    <option value="Un amigo">Me recomendó un amigo</option>
+                </datalist>
+            </label>
+        </div>
+
+        <!-- TEXTAREA: campo de texto de varias líneas, a diferencia del input que es de una sola -->
+        <!-- rows: cantidad de filas visibles del textarea -->
+        <div class="form-input">
+            <label>Mensaje
+            <textarea id="mensaje" rows="9" placeholder="Dejá tu mensaje..."></textarea>
+            </label>
+        </div>
+        <div class="form-input">
+            <label>Acepto los terminos y condiciones
+            <input type="checkbox" class="checkbox" id="checkbox">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

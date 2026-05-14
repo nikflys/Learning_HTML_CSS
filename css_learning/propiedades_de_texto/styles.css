@@ -1,0 +1,30 @@
+p {
+    color:red;
+    /* font-family: la fuente del texto, siempre conviene poner una fuente genérica de respaldo */
+    font-family: Montserrat;
+    font-size: 18px;
+    /* font-weight: grosor de la fuente — 100 muy fino, 400 normal, 700 negrita, 900 extra negrita */
+    font-weight: 500;
+    /* font-style: normal | italic | oblique */
+    font-style: italic;
+    /* text-align: left | right | center | justify | start
+       start es mejor práctica que left porque se adapta al idioma (árabe va a la derecha, etc.) */
+    text-align: left;
+    /* line-height: interlineado, 1.2 significa 1.2 veces el tamaño de la fuente
+       para lectura cómoda se recomienda entre 1.4 y 1.6 */
+    line-height: 1.2;
+    /* letter-spacing: espacio entre letras, útil para títulos o texto en mayúsculas */
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase (todo mayúsculas) | lowercase | capitalize (primera letra de cada palabra) */
+}
+
+span {
+    /* text-decoration: underline | overline | line-through | none
+       se usa también para sacarle el subrayado a los links */
+    text-decoration: line-through;
+    color: brown;
+}
+
+h1 {
+    text-align: center;
+}

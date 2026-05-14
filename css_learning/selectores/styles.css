@@ -1,0 +1,15 @@
+/* lo primero q ponemos antes del parentesis es el elemento a personalizar */
+
+li {
+    color: grey;
+}
+
+/* el punto es para seleccionar una clase */
+.ingrediente-faltante {
+    color: red;
+}
+
+/* el # es para seleccionar un id, no se recomienda repetir el id*/
+#ingrediente-secreto {
+    color: blue;
+}

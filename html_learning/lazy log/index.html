@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lazy log</title>
+</head>
+<body>
+    <!-- El párrafo largo de arriba es para simular una página con mucho contenido,
+         así la imagen queda "abajo" y se puede ver el efecto del lazy loading -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus amet nobis, officia, corrupti debitis ea non autem magni quam alias ratione placeat minus eius? Cumque repellendus nam eos praesentium esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde in aut repellat quia impedit qui est maiores hic ut fugiat doloribus amet cupiditate repudiandae praesentium, incidunt ab totam iusto quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa dignissimos explicabo eaque eum deserunt, eos assumenda aut rem reiciendis porro? Illo rem voluptatibus voluptates maxime autem. Tenetur, dolores ratione. Iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum impedit vero nemo possimus numquam quaerat repudiandae est architecto esse! Error saepe nisi esse neque laboriosam expedita accusantium eligendi iure?
+    </p>
+
+    <!-- loading="lazy": el navegador NO carga la imagen hasta que el usuario
+         la está a punto de ver (se acerca con el scroll).
+         Mejora el rendimiento inicial de la página porque no carga todo de golpe. -->
+    <img loading="lazy" src="../imagenes/Boca.png">
+</body>
+</html>

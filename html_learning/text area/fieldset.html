@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset y legend (simple)</title>
+    <link rel="stylesheet" href="fieldset.css">
+</head>
+<body>
+    <form>
+        <!-- fieldset: agrupa campos de un formulario que están relacionados entre sí,
+             visualmente los encierra con un borde -->
+        <!-- legend: el título que aparece en el borde del fieldset -->
+        <fieldset>
+            <legend>INFORMACIÓN BASICA</legend>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <!-- type="number": solo acepta números, muestra flechitas para subir/bajar -->
+            <input type="number" placeholder="Edad">
+        </fieldset>
+        <fieldset>
+            <legend>INFORMACIÓN DE CONTACTO</legend>
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Teléfono">
+        </fieldset>
+    </form>
+</body>
+</html>

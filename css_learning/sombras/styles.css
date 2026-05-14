@@ -1,0 +1,52 @@
+body {
+    margin:0;
+    /* radial-gradient: degradé radial (circular), va del centro hacia afuera
+       a diferencia de linear-gradient que va en línea recta */
+    background: radial-gradient(#fef614d1, #0308a3);
+}
+
+.box {
+    width: 280px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 30px;
+    /* box-shadow: sombra de la caja
+       valores: offset-x  offset-y  blur  spread  color
+       con 0 0 50px 0 la sombra es difusa y centrada (sin desplazamiento) */
+    box-shadow: 0 0 50px 0 #000d;
+    padding:20px;
+    padding-top:10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #444;
+    border-radius: 12px;
+    text-align: center;
+}
+
+h2 {
+    /* text-shadow: sombra del texto
+       valores: offset-x  offset-y  blur  color
+       con 0 0 12px el resplandor es difuso y centrado, crea efecto de "glow" */
+    text-shadow: 0 0 12px #f88;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.4;
+    /* justify: el texto ocupa todo el ancho de línea, alineado de ambos lados */
+    text-align: justify;
+    text-shadow: 0 0 5px #f88;
+    padding-top: 10px;
+}
+
+img {
+    width: 160px;
+    border-radius: 10%;
+    /* filter: aplica efectos visuales a la imagen
+       drop-shadow funciona igual que box-shadow pero sigue la forma del contenido,
+       no el borde del elemento — ideal para imágenes con transparencia (PNG) */
+    filter: drop-shadow(0 0 15px #000);
+}

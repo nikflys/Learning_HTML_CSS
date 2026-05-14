@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+input {
+    margin: 5px;
+    padding: 6px 9px;
+    /* border: none → elimina el borde por defecto que tienen los inputs */
+    border: none;
+    /* truco clásico: solo dejar el borde inferior da un estilo tipo "material design"
+       o "línea" que queda más limpio que el input cuadrado típico */
+    border-bottom: 1px solid white;
+    /* transparent: hace que el fondo sea invisible, muestra lo que hay detrás */
+    background: transparent;
+    color: goldenrod;
+    border-radius: 3px;
+}

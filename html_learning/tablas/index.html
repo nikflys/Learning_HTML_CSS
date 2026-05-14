@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tablas</title>
+</head>
+<body>
+    <!-- table: contenedor de la tabla -->
+    <table>
+        <!-- thead: encabezado de la tabla, va primero -->
+        <thead>
+            <tr> <!-- tr = table row, una fila -->
+                <th>Nombre</th>   <!-- th = table header, celda de encabezado (negrita por defecto) -->
+                <th>Apellido</th>
+                <th>Adjetivo</th>
+            </tr>
+        </thead>
+
+        <!-- tbody: cuerpo de la tabla, acá van los datos -->
+        <tbody>
+            <tr>
+                <td>Lucas</td>    <!-- td = table data, celda de dato común -->
+                <td>Dalto</td>
+                <td>Crack</td>
+            </tr>
+            <tr>
+                <td>Horacio</td>
+                <td>Vergoblio</td>
+                <td>Injunable</td>
+            </tr>
+            <tr>
+                <td>Lionel</td>
+                <td>Messi</td>
+                <td>Idolo</td>
+            </tr>
+        </tbody>
+
+        <!-- tfoot: pie de tabla, útil para totales o resúmenes -->
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <!-- colspan="2": esta celda ocupa 2 columnas en lugar de 1 -->
+                <td colspan="2">Famosos/injunables</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

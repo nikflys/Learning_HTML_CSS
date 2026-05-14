@@ -1,0 +1,28 @@
+/* Formas de especificar colores en CSS:
+   - Nombre: red, blue, coral, etc. (limitado a colores predefinidos)
+   - rgb(r, g, b): valores de 0 a 255 para rojo, verde y azul
+   - rgba(r, g, b, a): igual que rgb pero con un cuarto valor de opacidad (0 = transparente, 1 = opaco)
+   - HEX (#rrggbb): código hexadecimal, cada par representa rojo, verde y azul
+     (el orden es: 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f — va de oscuro a claro)
+     Se puede abreviar si los pares se repiten: #aabbcc → #abc */
+
+/* Ejemplo con rgb (comentado para comparar) */
+/* .box {
+    background: rgb(255, 2, 2);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+} */
+
+.box {
+    /* padding con dos valores: primero top/bottom, después left/right */
+    padding: 20px 50px;
+    background: #afcaca;
+    margin: 20px;
+    margin-left: 100px; /* este sobreescribe el margin-left del margin de arriba */
+    text-align: center;
+    color: #4d5d7a;
+    border-top: 2px solid #4d5d7a;
+    font-family: sans-serif;
+    font-weight: 700; /* 700 = negrita, 400 = normal, 100 = muy fino */
+}

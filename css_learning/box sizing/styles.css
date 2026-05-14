@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+}
+
+.box {
+    background: rgb(5, 209, 182);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+
+}
+
+.box-default {
+    box-sizing: content-box; /* por defecto, el box-sizing es content-box, el contenido tiene de tamaño lo definido en box, se le suma el padding y el border */
+    padding:25px;
+    border: 10px solid black;
+
+}
+
+.box-new {
+    padding: 25px;
+    border: 10px solid black; 
+    box-sizing: border-box; /* lo que defini como height y width es el tamaño de toda la caja */
+
+}
